@@ -1,0 +1,10 @@
+.Page404 {
+    background-image: url('../../../Assets/Images/404.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 840px;
+    width: 100%;
+    text-align: center;
+}
