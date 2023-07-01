@@ -1,88 +1,96 @@
-class Globals {
-}
+class Globals {}
 
 class DevelopmentGlobals extends Globals {
+  public theHost = "localhost";
+  public thePort = "8080";
 
-    public theHost = "localhost";
-    public thePort = "8080";
+  public urls = {
+    //Edit this later
+    example: `http://${this.theHost}:${this.thePort}/admin/getAllCompanies`,
 
-    public urls = {
+    addCompany: "http://localhost:8080/admin/addCompany",
+    updateCompany: "http://localhost:8080/admin/updateCompany",
+    deleteCompany: "http://localhost:8080/admin/deleteCompany/",
+    getOneCompany: "http://localhost:8080/admin/getOneCompany/",
+    getAllCompanies: "http://localhost:8080/admin/getAllCompanies",
 
-        //Edit this later
-        example: `http://${this.theHost}:${this.thePort}/admin/getAllCompanies`,
+    addCustomer: "http://localhost:8080/admin/addCustomer",
+    updateCustomer: "http://localhost:8080/admin/updateCustomer",
+    deleteCustomer: "http://localhost:8080/admin/deleteCustomer/",
+    getOneCustomer: "http://localhost:8080/admin/getOneCustomer/",
+    getAllCustomers: "http://localhost:8080/admin/getAllCustomers",
 
-        addCompany: "http://localhost:8080/admin/addCompany",
-        updateCompany: "http://localhost:8080/admin/updateCompany",
-        deleteCompany: "http://localhost:8080/admin/deleteCompany/",
-        getOneCompany: "http://localhost:8080/admin/getOneCompany/",
-        getAllCompanies: "http://localhost:8080/admin/getAllCompanies",
+    addCompanyCoupon: "http://localhost:8080/company/addCompanyCoupon/",
+    updateCompanyCoupon: "http://localhost:8080/company/updateCompanyCoupon",
+    deleteCompanyCoupon: "http://localhost:8080/company/deleteCompanyCoupon/",
+    getAllCompaniesCoupons:
+      "http://localhost:8080/company/getAllCompaniesCoupons",
+    getAllCompanyCouponsByCategory:
+      "http://localhost:8080/company/getAllCouponsByCategory/",
+    getAllCompanyCouponsUnderMaxPrice:
+      "http://localhost:8080/company/getAllCouponsUnderMaxPrice/",
+    getCompanyDetails: "http://localhost:8080/company/getCompanyDetails",
 
-        addCustomer: "http://localhost:8080/admin/addCustomer",
-        updateCustomer: "http://localhost:8080/admin/updateCustomer",
-        deleteCustomer: "http://localhost:8080/admin/deleteCustomer/",
-        getOneCustomer: "http://localhost:8080/admin/getOneCustomer/",
-        getAllCustomers: "http://localhost:8080/admin/getAllCustomers",
+    purchaseCoupon: "http://localhost:8080/customer/purchaseCoupon",
+    getAllCoupons: "http://localhost:8080/customer/getAllCoupons",
+    getAllCustomerCoupons:
+      "http://localhost:8080/customer/getAllCustomerCoupons",
+    getAllAvailableForPurchase: "http://localhost:8080/customer/getAllCoupons",
+    getAllCustomerCouponsByCategory:
+      "http://localhost:8080/customer/getAllCouponsByCategory/",
+    getAllCustomerCouponsUnderMaxPrice:
+      "http://localhost:8080/customer/getAllCouponsUnderMaxPrice/",
+    getCustomerDetails: "http://localhost:8080/customer/getCustomerDetails",
 
-        addCompanyCoupon: "http://localhost:8080/company/addCompanyCoupon/",
-        updateCompanyCoupon: "http://localhost:8080/company/updateCompanyCoupon",
-        deleteCompanyCoupon: "http://localhost:8080/company/deleteCompanyCoupon/",
-        getAllCompaniesCoupons: "http://localhost:8080/company/getAllCompaniesCoupons",
-        getAllCompanyCouponsByCategory: "http://localhost:8080/company/getAllCouponsByCategory/",
-        getAllCompanyCouponsUnderMaxPrice: "http://localhost:8080/company/getAllCouponsUnderMaxPrice/",
-        getCompanyDetails: "http://localhost:8080/company/getCompanyDetails",
-
-        purchaseCoupon: "http://localhost:8080/customer/purchaseCoupon",
-        getAllCoupons: "http://localhost:8080/customer/getAllCoupons",
-        getAllCustomerCoupons: "http://localhost:8080/customer/getAllCustomerCoupons",
-        getAllAvailableForPurchase: "http://localhost:8080/customer/getAllCoupons",
-        getAllCustomerCouponsByCategory: "http://localhost:8080/customer/getAllCouponsByCategory/",
-        getAllCustomerCouponsUnderMaxPrice: "http://localhost:8080/customer/getAllCouponsUnderMaxPrice/",
-        getCustomerDetails: "http://localhost:8080/customer/getCustomerDetails",
-
-        register: "http://localhost:8080/register",
-        login: "http://localhost:8080/login"
-
-    };
+    register: "http://localhost:8080/register",
+    login: "http://localhost:8080/login",
+  };
 }
 
 class ProductionGlobals extends Globals {
-    public urls = {
+  public urls = {
+    addCompany: "http://13.48.44.129:8080/admin/addCompany",
+    updateCompany: "http://13.48.44.129:8080/admin/updateCompany",
+    deleteCompany: "http://13.48.44.129:8080/admin/deleteCompany/",
+    getOneCompany: "http://13.48.44.129:8080/admin/getOneCompany/",
+    getAllCompanies: "http://13.48.44.129:8080/admin/getAllCompanies",
 
-        addCompany: "http://44.204.1.11:8080/admin/addCompany",
-        updateCompany: "http://44.204.1.11:8080/admin/updateCompany",
-        deleteCompany: "http://44.204.1.11:8080/admin/deleteCompany/",
-        getOneCompany: "http://44.204.1.11:8080/admin/getOneCompany/",
-        getAllCompanies: "http://44.204.1.11:8080/admin/getAllCompanies",
+    addCustomer: "http://13.48.44.129:8080/admin/addCustomer",
+    updateCustomer: "http://13.48.44.129:8080/admin/updateCustomer",
+    deleteCustomer: "http://13.48.44.129:8080/admin/deleteCustomer/",
+    getOneCustomer: "http://13.48.44.129:8080/admin/getOneCustomer/",
+    getAllCustomers: "http://13.48.44.129:8080/admin/getAllCustomers",
 
-        addCustomer: "http://44.204.1.11:8080/admin/addCustomer",
-        updateCustomer: "http://44.204.1.11:8080/admin/updateCustomer",
-        deleteCustomer: "http://44.204.1.11:8080/admin/deleteCustomer/",
-        getOneCustomer: "http://44.204.1.11:8080/admin/getOneCustomer/",
-        getAllCustomers: "http://44.204.1.11:8080/admin/getAllCustomers",
+    addCompanyCoupon: "http://13.48.44.129:8080/company/addCompanyCoupon/",
+    updateCompanyCoupon: "http://13.48.44.129:8080/company/updateCompanyCoupon",
+    deleteCompanyCoupon:
+      "http://13.48.44.129:8080/company/deleteCompanyCoupon/",
+    getAllCompaniesCoupons:
+      "http://13.48.44.129:8080/company/getAllCompaniesCoupons",
+    getAllCompanyCouponsByCategory:
+      "http://13.48.44.129:8080/company/getAllCouponsByCategory/",
+    getAllCompanyCouponsUnderMaxPrice:
+      "http://13.48.44.129:8080/company/getAllCouponsUnderMaxPrice/",
+    getCompanyDetails: "http://13.48.44.129:8080/company/getCompanyDetails",
 
-        addCompanyCoupon: "http://44.204.1.11:8080/company/addCompanyCoupon/",
-        updateCompanyCoupon: "http://44.204.1.11:8080/company/updateCompanyCoupon",
-        deleteCompanyCoupon: "http://44.204.1.11:8080/company/deleteCompanyCoupon/",
-        getAllCompaniesCoupons: "http://44.204.1.11:8080/company/getAllCompaniesCoupons",
-        getAllCompanyCouponsByCategory: "http://44.204.1.11:8080/company/getAllCouponsByCategory/",
-        getAllCompanyCouponsUnderMaxPrice: "http://44.204.1.11:8080/company/getAllCouponsUnderMaxPrice/",
-        getCompanyDetails: "http://44.204.1.11:8080/company/getCompanyDetails",
+    purchaseCoupon: "http://13.48.44.129:8080/customer/purchaseCoupon",
+    getAllCoupons: "http://13.48.44.129:8080/customer/getAllCoupons",
+    getAllCustomerCoupons:
+      "http://13.48.44.129:8080/customer/getAllCustomerCoupons",
+    getAllAvailableForPurchase:
+      "http://13.48.44.129:8080/customer/getAllCoupons",
+    getAllCustomerCouponsByCategory:
+      "http://13.48.44.129:8080/customer/getAllCouponsByCategory/",
+    getAllCustomerCouponsUnderMaxPrice:
+      "http://13.48.44.129:8080/customer/getAllCouponsUnderMaxPrice/",
+    getCustomerDetails: "http://13.48.44.129:8080/customer/getCustomerDetails",
 
-        purchaseCoupon: "http://44.204.1.11:8080/customer/purchaseCoupon",
-        getAllCoupons: "http://44.204.1.11:8080/customer/getAllCoupons",
-        getAllCustomerCoupons: "http://44.204.1.11:8080/customer/getAllCustomerCoupons",
-        getAllAvailableForPurchase: "http://44.204.1.11:8080/customer/getAllCoupons",
-        getAllCustomerCouponsByCategory: "http://44.204.1.11:8080/customer/getAllCouponsByCategory/",
-        getAllCustomerCouponsUnderMaxPrice: "http://44.204.1.11:8080/customer/getAllCouponsUnderMaxPrice/",
-        getCustomerDetails: "http://44.204.1.11:8080/customer/getCustomerDetails",
+    register: "http://13.48.44.129:8080/register",
+    login: "http://13.48.44.129:8080/login",
 
-        register: "http://44.204.1.11:8080/register",
-        login: "http://44.204.1.11:8080/login",
-
-        layout: "http://44.204.1.11:8080/layout",
-        home: "http://44.204.1.11:8080"
-
-    };
+    layout: "http://13.48.44.129:8080/layout",
+    home: "http://13.48.44.129:8080",
+  };
 }
 
 const globals = new ProductionGlobals();
